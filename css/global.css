@@ -1,0 +1,47 @@
+/* FONTS */
+
+/* Ubuntu */
+
+@font-face {
+    font-family: "Ubuntu-normal";
+    font-weight: normal;
+    font-style: normal;
+    src: url(font/Ubuntu-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-style: normal;
+    src: url(font/Ubuntu-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: lighter;
+    font-style: normal;
+    src: url(font/Ubuntu-Light.ttf) format("truetype");
+}
+
+/* Overpass */
+
+@font-face {
+    font-family: "Overpass-Light";
+    font-weight: lighter;
+    font-style: normal;
+    src: url(font/Overpass-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Overpass";
+    font-weight: normal;
+    font-style: normal;
+    src: url(font/Overpass-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Overpass";
+    font-weight: bold;
+    font-style: normal;
+    src: url(font/Overpass-Regular.ttf) format("truetype");
+}

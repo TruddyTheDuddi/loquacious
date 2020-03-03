@@ -1,0 +1,400 @@
+body{
+    font-family: Overpass;
+    background-color: rgb(23, 25, 25);
+    color: rgb(220, 220, 220);
+    /* background-color: rgb(220, 220, 220); */
+    /* background-color: rgb(151, 151, 156); */
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(101, 215, 235);
+}
+
+.bg{
+    /* -webkit-transition: 0.5s; */
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.9;
+    background-position: center;
+    background-color: rgb(46, 46, 51);
+    background-image: url(../img/user/bg/h5.jpg);
+    overflow: hidden;
+    border-bottom: 2px solid transparent;
+}
+
+/* For tall headers */
+.bg_tall{
+    opacity: 0.8;
+    height: 500px;
+    border: none;
+}
+
+.bg .gradient{
+    /* -webkit-transition: 0.5s; */
+    position: absolute;
+    background-image: linear-gradient(180deg,transparent 0,rgba(23,25,25,0.3) 70%,rgba(23,25,25,0.6));
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+}
+
+.bg_tall .gradient{
+    height: 60%;
+    background-image: linear-gradient(180deg,transparent 0,rgba(23,25,25,0.3) 50%,rgba(23,25,25,1));
+}
+
+
+.main_container{
+    display: flex;
+    max-width: 1000px;
+    margin: 250px auto;
+}
+
+.left{
+    width: 70%;
+    display: grid;
+}
+
+.right{
+    width: 30%;
+}
+
+.user_info_box{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(46, 46, 51);
+    border-top: 1.7px solid rgb(255, 255, 255, 0.4);
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+}
+
+.user_info_top {
+    margin-top: -140px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.user_info_top .main_pfp {
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    width: 160px;
+    max-width: 160px;
+    min-width: 160px;
+    height: 160px;
+    max-height: 160px;
+    min-height: 160px;
+    border-left: 4px solid rgb(101, 215, 235);
+}
+
+.user_info_top_text{
+    width: 100%;
+}
+
+.main_username{
+    font-family: Ubuntu;
+    font-size: 42px;
+    margin: 15px;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.35);
+}
+
+.main_username .small{
+    font-size: 16px;
+    color: rgb(101, 215, 235);
+    margin-left: 5px;
+}
+
+.main_username img{
+    cursor: pointer;
+    margin: auto 8px;
+    height: 23px;
+    width: 23px;
+}
+
+.user_info_bottom{
+    margin: 8px 16px;
+    display: flex;
+    align-items: center;
+}
+
+.user_info_bottom .more{
+    height: 14px;
+    transform: scale(1.8);
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+
+.user_info_bottom .tagline{
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.user_info_bottom .separator{
+    background-color: rgb(220, 220, 220);
+    width: 3px;
+    height: 3px;
+    border-radius: 1px;
+    margin: auto 10px;
+}
+
+.dogtag{
+    background-color: rgb(72, 72, 75);
+    padding: 2px 3px;
+    color: rgb(101, 215, 235);
+    font-family: Ubuntu-normal;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.dt_special{
+    background-color: rgb(101, 215, 235);
+    color: rgb(32, 34, 34);
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+
+.user_middle{
+    display: flex;
+    align-items: flex-end;
+}
+
+.user_bio{
+    max-width: 400px;
+    padding: 10px 20px;
+}
+
+.follow_holder{
+    margin-left: auto;
+    display: flex;
+}
+
+.follow_stat{
+    margin: 5px 10px;
+    text-align: center;
+}
+
+.follow_stat_title{
+    opacity: 0.5;
+}
+
+.follow_number{
+    font-family: Overpass-Light;
+    font-size: 30px;
+    letter-spacing: -1px;
+    color: rgb(101, 215, 235);
+}
+
+
+/* Right */
+.casual_box{
+    margin: 10px;
+    background-color: rgb(46, 46, 51);
+    border-top: 1.7px solid rgb(255, 255, 255, 0.4);
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+    display: grid;
+}
+
+.box_title{
+    font-size: 14px;
+    opacity: 0.8;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.box_list{
+    margin: 5px;
+    display: grid;
+}
+
+.oc_el{
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+    display: flex;
+    margin: 10px;
+}
+
+.oc_el .oc_pfp{
+    width: 70px;
+    display: block;
+    height: 70px;
+    border-left: 2px solid rgb(101, 215, 235);
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+}
+
+.oc_el .oc_name{
+    word-break: break-word;
+    font-family: Ubuntu;
+    font-size: 18px;
+    margin: auto 0px auto 0px;
+    padding: 8px 16px 8px 8px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.empty_notice{
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.3);
+    font-family: Ubuntu;
+    opacity: 0.6;
+    font-size: 16px;
+}
+
+.stat_el{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.stat_el .el_title{
+    
+}
+
+.stat_el .el_score{
+    font-family: Overpass-Light;
+    color: rgb(101, 215, 235);
+    margin-left: auto;
+}
+
+hr{
+    border: none;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.2);
+    margin: 0;
+}
+
+/* Post */
+
+.posts_roll{
+    display: grid;
+    margin-top: 20px;
+}
+
+.post_element{
+    display: flex;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.post_element .post_left img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.post_element .post_right{
+    width: 100%;
+}
+
+.post_element .post_action{
+    display: flex;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.post_element .post_action .timestamp{
+    margin-left: auto;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.post_element .post_content{
+    margin: 10px;
+}
+
+.post_element .post_text{
+    background-color: rgba(46, 46, 51, 1);
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.25); */
+    padding: 25px;
+    font-size: 20px;
+    background-image: url(../img/web/lines.svg);
+    background-size: 300px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    /* border-radius: 3px; */
+}
+
+.post_element .post_content .post_image{
+    display: block;
+    margin: 10px 0;
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.post_element .post_interact{
+    display: flex;
+    margin: 0 10px;
+}
+
+.post_element .post_interact button{
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+    background: rgba(46, 46, 51, 0.8);
+    color: rgb(101, 215, 235);
+    padding: 10px 14px 8px 14px;
+    border: none;
+    border-left: 2px solid rgb(101, 215, 235);
+    margin: 0 10px 5px 10px;
+}
+
+.post_element .post_interact .on_right{
+    margin-left: auto;
+}
+
+.post_element .big_img_post{
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid rgb(101, 215, 235);
+    /* border-bottom: 2px solid rgb(32, 34, 34); */
+}
+
+
+.post_element .post_interact .like_button{
+    padding: 0;
+    border: none;
+    display: flex;
+}
+
+.post_element .post_interact .like_img{
+    -webkit-transition: cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+    width: 18px;
+    padding: 10px;
+    display: grid;
+    background-color: rgb(101, 215, 235);
+}
+
+.post_element .post_interact .like_img img{
+    -webkit-transition: cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+    display: block;
+    opacity: 0.8;
+    width: 17px;
+    margin: auto;
+}
+
+.post_element .post_interact .like_button:hover .like_img{
+    
+    width: 2px;
+    padding: 0;
+}
+
+.post_element .post_interact .like_button:hover .like_img img{
+    width: 0px;
+}
+
+
+.post_element .post_interact span{
+    margin: 10px 14px 8px 14px;
+}
