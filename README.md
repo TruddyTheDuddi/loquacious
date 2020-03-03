@@ -1,10 +1,12 @@
 # loquacious
 Website project in progress =^._.^=
-![Hellooo](https://github.com/TruddyTheDuddi/loquacious/blob/master/katto.gif)
+
+Feel free to check out the live BETA site here: https://loquacious.xyz/
 
 ## What will I be working on?
 First of all, I'm going to focus on the designs and layouts. That means, all of the content you'll be seeing is merely **placeholders** for now. So if you see some wacky text or interesting content, then there's no need to worry =^.w.^=
 
 Here's a list of the pages, and the amount of progress or each of them:
-* Profile pages
-* Settings
+* Profile pages (50%)
+* Profile settings (0%)
+* Single post vizualiser (0%)
