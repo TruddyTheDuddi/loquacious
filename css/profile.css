@@ -357,10 +357,18 @@ hr{
 }
 
 .post_element .big_img_post{
-    width: 100%;
-    display: block;
+    display: grid;
+    background-color: rgb(35, 35, 37);
     border-bottom: 2px solid rgb(101, 215, 235);
+    min-height: 120px;
     /* border-bottom: 2px solid rgb(32, 34, 34); */
+}
+
+.big_img_post img{
+    max-width: 100%;
+    margin: auto;
+    max-height: 70vh;
+    display: block;
 }
 
 
