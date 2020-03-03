@@ -316,7 +316,9 @@ hr{
 
 .post_element .post_text{
     background-color: rgba(46, 46, 51, 1);
+    -webkit-transition: border-color cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
     /* border-bottom: 2px solid rgba(0, 0, 0, 0.25); */
+    border-left: 2px solid transparent;
     padding: 25px;
     font-size: 20px;
     background-image: url(../img/web/lines.svg);
@@ -397,4 +399,9 @@ hr{
 
 .post_element .post_interact span{
     margin: 10px 14px 8px 14px;
+}
+
+/* Post test effect */
+.post_text:hover{
+    border-left-color: rgb(101, 215, 235);
 }
