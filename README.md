@@ -1,7 +1,7 @@
 # loquacious
 Website project in progress =^._.^=
 
-Feel free to check out the live BETA site here: https://loquacious.xyz/
+**Feel free to check out the live BETA site here: https://loquacious.xyz/**
 
 (Tho I still need to figure out how to link it to the hosting site so it updates automatically...)
 
