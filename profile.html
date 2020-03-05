@@ -26,9 +26,9 @@
                     <div class="user_info_top_text">
                         <div class="main_username">Muddi<img title="Verified user" src="img/web/verified.svg"><span class="small">@muddi</span></div>
                         <div class="user_info_bottom">
-                            <div contenteditable class="tagline">Meow? Meow!</div>
+                            <div class="tagline">Meow? Meow!</div>
                             <div class="separator"></div>
-                            <div contenteditable class="dogtag">CAT</div>
+                            <div class="dogtag">CAT</div>
                             <!-- <img class="more" src="img/web/more.svg"> -->
                         </div>
                     </div>
@@ -130,12 +130,18 @@
 
         <div class="right">
             <div class="casual_box">
+                <div id="top_pic" class="top_custom_pic_holder">
+                    <div class="top_custom_pic">
+                        <img src="img/web/alpha3.png">
+                    </div>
+                </div>
                 <div class="box_title">Muddi's OCs (2)</div>
                 <div class="box_list">
                     <a href="profile.html" class="oc_el">
                         <img class="oc_pfp" src="img/user/pfp/3.jpg">
                         <div class="oc_name">Lëo</div>
                     </a>
+                    <input oninput="move(this)" type="range" min="0" max="80" value="0">
                     <a href="profile.html" class="oc_el">
                         <img class="oc_pfp" src="img/user/pfp/1.jpg">
                         <div class="oc_name">Cranberry</div>
@@ -180,6 +186,9 @@
                         <div class="el_score">5 Months ago</div>
                     </div>
                 </div>
+                <div class="bottom_custom_pic">
+                    <img src="img/web/alpha3.png">
+                </div>
             </div>
 
         </div>
@@ -187,3 +196,9 @@
 
 </body>
 </html>
+
+<script>
+    function move(t){
+        document.getElementById('top_pic').style.height = t.value+"px";
+    }
+</script>

@@ -413,3 +413,36 @@ hr{
 .post_text:hover{
     border-left-color: rgb(101, 215, 235);
 }
+
+.top_custom_pic_holder{
+    height: 0px;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: flex-end;
+}
+
+.top_custom_pic{
+    display: grid;
+}
+
+.top_custom_pic img{
+    max-width: 100%;
+    opacity: 0.3;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.bottom_custom_pic{
+    display: grid;
+    margin-bottom: -200px;
+    max-height: 200px;
+}
+
+.bottom_custom_pic img{
+    max-width: 100%;
+    opacity: 0.3;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto 0 auto;
+}
