@@ -446,3 +446,30 @@ hr{
     display: block;
     margin: 0 auto 0 auto;
 }
+
+
+/* Navig */
+.navig_profile_holder{
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+    display: flex;
+    padding-left: 10px;
+    margin: 10px 10px 10px -10px;
+    border-left: 10px solid rgb(101, 215, 235);
+    font-family: ubuntu;
+    background-color: rgb(46, 46, 51);
+}
+
+.navig_profile_holder .navig_el{
+    transition: 0.2s background-color;
+    cursor: pointer;
+    padding: 12px;
+    background-color: rgb(46, 46, 51);
+}
+
+.navig_profile_holder .navig_el:hover{
+    background-color: rgb(65, 65, 70);
+}
+
+.navig_profile_holder .navig_el_right{
+    margin-left: auto;
+}
