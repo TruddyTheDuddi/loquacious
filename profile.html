@@ -72,11 +72,11 @@
                 <div class="sng_u_box">
                     <!-- Casual section -->
                     <div class="sng_u_top">
-                        <img class="sng_u_pfp" src="img/user/pfp/4.jpg">
+                        <a href="profile.html"><img class="sng_u_pfp" src="img/user/pfp/4.jpg"></a>
                         <div class="sng_u_username_holder">
                             <span class="sng_u_display_name">Muddi</span>
                             <img class="sng_u_badge" src="img/web/verified.svg">
-                            <a class="sng_u_username">@muddi</a>
+                            <a href="profile.html" class="sng_u_username">@muddi</a>
                         </div>
                         <button class="sng_u_follow">Follow</button>
                         <label class="sng_u_action">
@@ -95,13 +95,13 @@
                 <div class="sng_u_box">
                     <!-- Casual section -->
                     <div class="sng_u_top">
-                        <img class="sng_u_pfp" src="img/user/pfp/1.jpg">
+                        <a href="profile.html"><img class="sng_u_pfp" src="img/user/pfp/1.jpg"></a>
                         <div class="sng_u_username_holder">
                             <span class="sng_u_display_name">Cranberry</span>
 
                             <span class="dogtag">OC</span>
                         </div>
-                        <button class="sng_u_follow">Follow</button>
+                        <button class="sng_u_follow sng_u_follow_on">Following</button>
                         <label class="sng_u_action">
                             <img onclick="sng_u_open(this)" src="img/web/more.svg">
                             <input id="sng_u_open_boolean" title="More actions" type="checkbox">
@@ -114,6 +114,10 @@
                         <div class="sng_u_actions">Obladi oblada, life goes on brah</div>
                     </div>
                 </div>
+
+                <button onclick="load_more(this)" class="load_more"><span id="load_text">Load more</span> <div id="load_dot" class=""></div></button>
+
+                <div class="empty_notice">Nothing else to load! =^._.^=</div>
 
             </div>
 
@@ -282,4 +286,13 @@
         }
         
     }
+
+    function load_more(t){
+        t.disabled = "true";
+        t.parentElement.querySelector('#load_dot').classList.add("load_dot");
+        t.parentElement.querySelector('#load_text').innerHTML = "Loading..";
+
+        console.log(t);
+    }
+
 </script>
