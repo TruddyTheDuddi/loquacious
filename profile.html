@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
     <title>Muddi - Loquacious</title>
     <link rel="icon" href="">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -38,7 +38,7 @@
                         —   I run under the name of Muddi
                         <br><br>
                         I love to experiment with art, music, coding and other creativity related things, and I don't hesitate to post what I've come up with.
-                        <br><br>
+
                     </div>
                     <div class="follow_holder">
                         <div class="follow_stat">
@@ -54,17 +54,71 @@
             </div>
 
             <div class="navig_profile_holder">
-                <div class="navig_el">Profile</div>
+                <div class="navig_el">My feed</div>
                 <div class="navig_el">Know-me</div>
                 <div class="navig_el">Following</div>
                 <div class="navig_el">Follows</div>
-                <div class="navig_el navig_el_right">Fan-made</div>
+                <div class="navig_el navig_el_right">Fan Zone</div>
                 
             </div>
 
             <div class="post_compo_box"></div>
 
-            <div class="posts_roll">
+            <!-- Follows/Followers -->
+            <div class="inner_profile_content">
+
+                <div class="bigTitle">Following</div>
+
+                <div class="sng_u_box">
+                    <!-- Casual section -->
+                    <div class="sng_u_top">
+                        <img class="sng_u_pfp" src="img/user/pfp/4.jpg">
+                        <div class="sng_u_username_holder">
+                            <span class="sng_u_display_name">Muddi</span>
+                            <img class="sng_u_badge" src="img/web/verified.svg">
+                            <a class="sng_u_username">@muddi</a>
+                        </div>
+                        <button class="sng_u_follow">Follow</button>
+                        <label class="sng_u_action">
+                            <img onclick="sng_u_open(this)" src="img/web/more.svg">
+                            <input id="sng_u_open_boolean" title="More actions" type="checkbox">
+                        </label>
+                    </div>
+                    <!-- Actions section -->
+                    <div id="sng_u_openable" class="sng_u_bottom">
+                        <div class="sng_u_actions">Copy link to user</div>
+                        <div class="sng_u_actions">Open in moderation page</div>
+                        <div class="sng_u_actions">You punk get out of my settings =^._.^=</div>
+                    </div>
+                </div>
+
+                <div class="sng_u_box">
+                    <!-- Casual section -->
+                    <div class="sng_u_top">
+                        <img class="sng_u_pfp" src="img/user/pfp/1.jpg">
+                        <div class="sng_u_username_holder">
+                            <span class="sng_u_display_name">Cranberry</span>
+
+                            <span class="dogtag">OC</span>
+                        </div>
+                        <button class="sng_u_follow">Follow</button>
+                        <label class="sng_u_action">
+                            <img onclick="sng_u_open(this)" src="img/web/more.svg">
+                            <input id="sng_u_open_boolean" title="More actions" type="checkbox">
+                        </label>
+                    </div>
+                    <!-- Actions section -->
+                    <div id="sng_u_openable" class="sng_u_bottom">
+                        <div class="sng_u_actions">Copy link to user</div>
+                        <div class="sng_u_actions">Open in moderation page</div>
+                        <div class="sng_u_actions">Obladi oblada, life goes on brah</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- MYFEED TAB -->
+            <div class="inner_profile_content">
 
                 <div class="post_element">
                     <div class="post_left">
@@ -136,6 +190,7 @@
                 </div>
 
             </div>
+
         </div>
 
         <div class="right">
@@ -210,5 +265,21 @@
 <script>
     function move(t){
         document.getElementById('top_pic').style.height = t.value+"px";
+    }
+
+    function sng_u_open(t){
+        var value = t.parentElement.querySelector('#sng_u_open_boolean').checked;
+
+        switch(value){
+            case false: 
+                t.classList.add('rotated');
+                t.parentElement.parentElement.parentElement.querySelector('#sng_u_openable').classList.add('sng_u_bottom_open');
+                break;
+            case true: 
+                t.classList.remove('rotated'); 
+                t.parentElement.parentElement.parentElement.querySelector('#sng_u_openable').classList.remove('sng_u_bottom_open');
+                break;
+        }
+        
     }
 </script>

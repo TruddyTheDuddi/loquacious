@@ -200,7 +200,7 @@ a{
 .casual_box{
     margin: 10px;
     background-color: rgb(46, 46, 51);
-    border-top: 1.7px solid rgb(255, 255, 255, 0.4);
+    border-top: 1.7px solid rgba(255, 255, 255, 0.4);
     box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
     display: grid;
 }
@@ -276,9 +276,15 @@ hr{
 
 /* Post */
 
-.posts_roll{
+.inner_profile_content{
     display: grid;
     margin-top: 20px;
+}
+
+.inner_profile_content .bigTitle{
+    font-size: 40px;
+    font-family: ubuntu;
+    margin: 20px;
 }
 
 .post_element{
@@ -291,6 +297,9 @@ hr{
     width: 80px;
     height: 80px;
     margin: 10px;
+    margin-right: 5px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
 }
 
 .post_element .post_right{
@@ -454,7 +463,7 @@ hr{
     display: flex;
     padding-left: 10px;
     margin: 10px 10px 10px -10px;
-    border-left: 10px solid rgb(101, 215, 235);
+    border-left: 14px solid rgb(101, 215, 235);
     font-family: ubuntu;
     background-color: rgb(46, 46, 51);
 }
@@ -464,6 +473,7 @@ hr{
     cursor: pointer;
     padding: 12px;
     background-color: rgb(46, 46, 51);
+    -webkit-user-select: none;
 }
 
 .navig_profile_holder .navig_el:hover{
@@ -472,4 +482,123 @@ hr{
 
 .navig_profile_holder .navig_el_right{
     margin-left: auto;
+}
+
+
+
+
+/* User list module */
+.sng_u_box{
+    padding: 0px;
+    margin: 5px;
+    position: relative;
+    display: grid;
+}
+
+.sng_u_top{
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    background-color: rgb(46, 46, 51);
+}
+
+.sng_u_pfp{
+    height: 80px;
+    width: 80px;
+}
+
+.sng_u_username_holder{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-family: ubuntu;
+    background-color: rgb(46, 46, 51);
+}
+
+.sng_u_display_name{
+    font-size: 20px;
+    margin: auto 5px;
+}
+
+
+.sng_u_badge{
+    height: 16px;
+    display: block;
+}
+
+.sng_u_box .dogtag{
+    margin-left: 5px;
+}
+
+.sng_u_username{
+    margin: auto 5px;
+}
+
+.sng_u_follow{
+    border: none;
+    font: inherit;
+    padding: 15px 20px;
+    background-color: rgba(0,0,0,0.3);
+    color: rgb(101, 215, 235);
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.sng_u_bottom{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.sng_u_action{
+    margin: auto 4px;
+}
+
+.sng_u_action img{
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition-property: transform, margin;
+    cursor: pointer;
+    height: 26px;
+    user-select: none;
+    display: block;
+    
+}
+
+.sng_u_action .rotated{
+    transform: rotate(90deg);
+    margin: 0 8px;
+}
+
+.sng_u_action input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.sng_u_bottom{
+    margin-left: auto;
+    display: none;
+    transform: translateY(-80px);
+    background-color: rgb(35, 35, 39);
+}
+
+.sng_u_bottom_open{
+    display: inline-block;
+    -webkit-animation: sng_u_bottom_open 0.3s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+    
+}
+
+@keyframes sng_u_bottom_open{
+    0%{}
+    100%{transform: translateY(0);}
+}
+
+.sng_u_actions{
+    padding: 10px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.sng_u_actions:hover{
+    background-color: rgb(56, 56, 61);
 }
