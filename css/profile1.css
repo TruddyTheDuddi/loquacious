@@ -75,6 +75,7 @@ a{
     background-color: rgb(46, 46, 51);
     border-top: 1.7px solid rgb(255, 255, 255, 0.4);
     box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+    position: relative;
 }
 
 .user_info_top {
@@ -175,9 +176,28 @@ a{
     padding: 10px 20px;
 }
 
+.follow_main_btn{
+    top: 10px;
+    border: none;
+    font: inherit;
+    color: rgb(101, 215, 235);
+    font-family: ubuntu;
+    cursor: pointer;
+    padding: 12px 24px;
+    right: 10px;
+    background-color: rgb(32, 34, 34);
+    position: absolute;
+}
+
+.follow_main_btn:hover{
+    background-color: rgb(101, 215, 235);
+    color: rgb(35, 35, 37);
+}
+
 .follow_holder{
     margin-left: auto;
     display: flex;
+    margin-top: 8px;
 }
 
 .follow_stat{
@@ -283,7 +303,7 @@ hr{
 }
 
 .inner_profile_content .bigTitle{
-    font-size: 40px;
+    font-size: 30px;
     font-family: ubuntu;
     margin: 20px;
 }
