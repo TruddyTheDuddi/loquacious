@@ -124,6 +124,16 @@ a{
     text-align: right;
 }
 
+.post_timespan .time_n_type_hold{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
+}
+
+.post_timespan .project_type{
+
+}
+
 .post_timespan .humanized_date{
     opacity: 0.8;
     margin: 10px;
@@ -151,6 +161,7 @@ a{
 .post_holder{
     box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
     margin: 20px;
+    word-break: break-word;
 }
 
 .artwork_title{
@@ -173,4 +184,39 @@ a{
 .post_img{
     width: 100%;
     margin: 20px 0;
+}
+
+.story_header{
+    background-size: cover;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.story_header_bg{
+    position: absolute;
+    background-image: linear-gradient(180deg,rgba(23,25,25,0.2) 0,rgba(23,25,25,0.5) 70%,rgba(23,25,25,0.9));
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+}
+
+.story_header_overlay{
+    font-family: ubuntu;
+    color: white;
+    position: relative;
+    margin: 20px;
+    text-shadow: 2px 2px 0px rgba(23,25,25,0.3);
+}
+
+.header_title{
+    font-size: 50px;
+    margin: 15px;
+}
+
+.header_desc{
+    margin: 15px;
+    opacity: 0.8;
 }

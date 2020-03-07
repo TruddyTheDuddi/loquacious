@@ -12,6 +12,7 @@
 </head>
 <body>
     <div>
+        Select a post type: (DEMO only)
         <button onclick="showall()">Show all elements</button>
         <button onclick="art()">Artwork</button>
         <button onclick="post()">Post</button>
@@ -22,6 +23,7 @@
     </div>
 
     <div id="center" class="centerizer">
+
         <div id="main_holder" class="main_holder">
             <div class="left">
                 <img src="img/user/pfp/4.jpg">
@@ -41,10 +43,29 @@
                     </div>
                 </div>
                 <div class="post_holder">
+                    
+
+                    <!-- Artwork -->
                     <div id="artwork" class="artwork">
                         <img src="img/user/post/3.jpg">
                     </div>
                     <div id="title" class="artwork_title">The life of Brioche</div>
+
+                    <!-- Story header -->
+
+                    <div id="story_header" class="story_header" style="background-image: url(img/user/post/3.jpg);">
+                        <div class="story_header_bg"></div>
+                        <div class="story_header_overlay">
+                            <div class="header_title">
+                                The life of Brioche is cool
+                            </div>
+                            <div class="header_desc">
+                                Deep inside Tulip's dream, there was a bar called the Blue Barnicle, where the pirate lads spend their time when the masts were down.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post content -->
                     <div id="postcontent" class="post_content">
                         Deep inside Tulip's dream, there was a bar called the Blue Barnicle, where the pirate lads spend their time when the masts were down.
                         <h2>Yarrr - said the captain.</h2>
@@ -60,6 +81,10 @@
                 </div>
             </div>
         </div>
+
+        <!-- Comments -->
+        <div class="comments">aaah comments</div>
+
     </div>
 
 </body>
@@ -73,6 +98,7 @@
         document.getElementById("postcontent").style.display = "";
         document.getElementById("center").style.maxWidth = "";
         document.getElementById("main_holder").style.maxWidth = "";
+        document.getElementById("story_header").style.display = "";
     }
     function post(){
         document.getElementById("artwork").style.display = "none";
@@ -80,6 +106,7 @@
         document.getElementById("postcontent").style.display = "";
         document.getElementById("center").style.maxWidth = "880px";
         document.getElementById("main_holder").style.maxWidth = "800px";
+        document.getElementById("story_header").style.display = "none";
     }
     function art(){
         document.getElementById("artwork").style.display = "";
@@ -87,6 +114,7 @@
         document.getElementById("postcontent").style.display = "none";
         document.getElementById("center").style.maxWidth = "";
         document.getElementById("main_holder").style.maxWidth = "";
+        document.getElementById("story_header").style.display = "none";
     }
     function story(){
         document.getElementById("artwork").style.display = "none";
@@ -94,6 +122,7 @@
         document.getElementById("postcontent").style.display = "";
         document.getElementById("center").style.maxWidth = "";
         document.getElementById("main_holder").style.maxWidth = "";
+        document.getElementById("story_header").style.display = "";
     }
 </script>
 </html>

@@ -13,6 +13,6 @@ Watch out! The documents are currently **not mobile optimized**. And since the d
 Here's a list of the pages, and the amount of progress or each of them:
 * Profile pages (65%)
 * Profile settings (0%)
-* Single post vizualiser (40%)
+* Single post vizualiser (45%)
 
 That's all for now! Have a cookie: :cookie:
