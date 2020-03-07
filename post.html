@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <title>Hello world - Loquacious</title>
+    <link rel="icon" href="">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/global.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/post.css'>
+    
+</head>
+<body>
+    <div>
+        <button onclick="showall()">Show all elements</button>
+        <button onclick="art()">Artwork</button>
+        <button onclick="post()">Post</button>
+        <button onclick="story()">Story</button>
+    </div>
+    <div class="bg">
+        <div class="gradient"></div>
+    </div>
+
+    <div class="centerizer">
+        <div class="main_holder">
+            <div class="left">
+                <img src="img/user/pfp/4.jpg">
+                <div class="line"></div>
+            </div>
+            <div class="right">
+                <div class="top_info_tab">
+                    <div class="usernInfo">
+                        <div class="displayName">Muddi</div>
+                        <img class="badge" src="img/web/verified.svg">
+                        <a href="profile.html" class="username">@muddi</a>
+                    </div>
+                    <div class="post_timespan">
+                        <div class="humanized_date">5 days ago</div>
+                        <div class="separator_dot"></div> 
+                        <div class="date_precise">6th of March 2020 at 15:20</div>
+                    </div>
+                </div>
+                <div class="post_holder">
+                    <div id="artwork" class="artwork">
+                        <img src="img/user/post/3.jpg">
+                    </div>
+                    <div id="title" class="artwork_title">The life of Brioche</div>
+                    <div id="postcontent" class="post_content">
+                        Deep inside Tulip's dream, there was a bar called the Blue Barnicle, where the pirate lads spend their time when the masts were down.
+                        <h2>Yarrr - said the captain.</h2>
+                        Everyone raised their drinks, the saturated enchanted liquid spilled out all over the floor.
+                        The stage was a mediocre sized rusty boat, that was simply flipped over. It was said to be the boat that was sailed when the Great Treasure of Hendzi was found, a few decades ago. The village celebrated for an entire week.<br>
+                        <img class="post_img" src="img/user/post/5.jpg">
+                        The boat singed along with the crew, crackling as the allmighty pirate took his steps.
+                        They knew well that the smell of nostalgia in the air was asphyxiating them all. Little could they do about it, their everyday became meaningless and their souls lifeless, watching from their drenched seats how the seven seas had dried up. 
+                        <br>
+                        <br>
+                        Among the punks were Brioche: most of the crew only knew her as the captain's wife, or the second in command. She was the bartender.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    function showall(){
+        document.getElementById("artwork").style.display = "";
+        document.getElementById("title").style.display = "";
+        document.getElementById("postcontent").style.display = "";
+    }
+    function post(){
+        document.getElementById("artwork").style.display = "none";
+        document.getElementById("title").style.display = "none";
+        document.getElementById("postcontent").style.display = "";
+    }
+    function art(){
+        document.getElementById("artwork").style.display = "";
+        document.getElementById("title").style.display = "";
+        document.getElementById("postcontent").style.display = "none";
+    }
+    function story(){
+        document.getElementById("artwork").style.display = "none";
+        document.getElementById("title").style.display = "none";
+        document.getElementById("postcontent").style.display = "";
+    }
+</script>
+</html>

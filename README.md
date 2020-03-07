@@ -11,8 +11,8 @@ First of all, I'm going to focus on the designs and layouts. That means, all of 
 Watch out! The documents are currently **not mobile optimized**. And since the design is pretty complex, it might turn out looking really messed up.
 
 Here's a list of the pages, and the amount of progress or each of them:
-* Profile pages (52%)
+* Profile pages (65%)
 * Profile settings (0%)
-* Single post vizualiser (0%)
+* Single post vizualiser (40%)
 
 That's all for now! Have a cookie: :cookie:
