@@ -21,8 +21,8 @@
         <div class="gradient"></div>
     </div>
 
-    <div class="centerizer">
-        <div class="main_holder">
+    <div id="center" class="centerizer">
+        <div id="main_holder" class="main_holder">
             <div class="left">
                 <img src="img/user/pfp/4.jpg">
                 <div class="line"></div>
@@ -64,25 +64,36 @@
 
 </body>
 <script>
+
+    // TEMPORARY CODE FOR VIZUALISATION
+
     function showall(){
         document.getElementById("artwork").style.display = "";
         document.getElementById("title").style.display = "";
         document.getElementById("postcontent").style.display = "";
+        document.getElementById("center").style.maxWidth = "";
+        document.getElementById("main_holder").style.maxWidth = "";
     }
     function post(){
         document.getElementById("artwork").style.display = "none";
         document.getElementById("title").style.display = "none";
         document.getElementById("postcontent").style.display = "";
+        document.getElementById("center").style.maxWidth = "880px";
+        document.getElementById("main_holder").style.maxWidth = "800px";
     }
     function art(){
         document.getElementById("artwork").style.display = "";
         document.getElementById("title").style.display = "";
         document.getElementById("postcontent").style.display = "none";
+        document.getElementById("center").style.maxWidth = "";
+        document.getElementById("main_holder").style.maxWidth = "";
     }
     function story(){
         document.getElementById("artwork").style.display = "none";
         document.getElementById("title").style.display = "none";
         document.getElementById("postcontent").style.display = "";
+        document.getElementById("center").style.maxWidth = "";
+        document.getElementById("main_holder").style.maxWidth = "";
     }
 </script>
 </html>
