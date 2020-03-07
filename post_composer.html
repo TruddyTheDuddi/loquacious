@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Text editor - Loquacious</title>
+    <link rel="icon" href="">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/global.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+    <body>
+
+        <div class="test_module">
+            Input text:
+            <br><br>
+            <div id="editor_box">
+                <textarea id="text_editor" placeholder="Input some text here"></textarea>
+                <br>
+                <button id="bold_btn">Bold</button>
+                <button id="italic">Italics</button>
+                <button id="big_text">Big text</button>
+                <br>
+                <button on>Copy pic 1 to clipboard</button>
+                <button>Copy pic 2 to clipboard</button>
+            </div>
+            <br><br>
+            2nd input box for testing Class Oriented attributes:
+            <br><br>
+            <div id="editor_box2">
+                <textarea id="text_editor" placeholder="Input some text here"></textarea>
+                <br>
+                <button id="bold_btn">Bold</button>
+                <button id="italic">Italics</button>
+                <button id="big_text">Big text</button>
+                <br>
+                <button>Copy pic 1 to clipboard</button>
+                <button>Copy pic 2 to clipboard</button>
+            </div>
+            <br><br>
+            <small>Note: The formatting will be done internally with PHP</small>
+        </div>
+
+        
+
+    </body>
+</html>
+
+<style>
+    body{
+        font-family: ubuntu;
+        margin: 50px;
+        display: grid;
+    }
+    textarea{
+        padding: 15px;
+        font-size: 20px;
+        resize: none;
+        width: 400px; 
+        height: 47px; 
+        font-family: inherit;
+        border-radius: 5px;
+        border: 1px solid rgba(0,0,0,0.3);
+    }
+
+    textarea:focus{
+        border: 1px solid rgba(0,0,0,0.5);
+    }
+
+    .test_module{
+        margin: 30px auto;
+    }
+</style>
+
+<script src="js/text_editor.js"></script>
