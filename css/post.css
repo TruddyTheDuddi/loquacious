@@ -9,6 +9,7 @@ body{
 
 a{
     text-decoration: none;
+    color: rgb(220, 220, 220);
 }
 
 .bg{
@@ -108,9 +109,9 @@ a{
 }
 
 .badge{
-    height: 18px;
+    height: 20px;
     display: block;
-    margin: 5px;
+    margin: 0px;
 }
 
 .username{
@@ -219,4 +220,96 @@ a{
 .header_desc{
     margin: 15px;
     opacity: 0.8;
+}
+
+/* Comments */
+.comment_holder{
+    max-width: 800px;
+    margin: auto;
+}
+
+.comments_title{
+    font-size: 36px;
+    margin: 30px;
+}
+
+.comment_list{
+    max-width: 600px;
+}
+
+.comment{
+    display: flex;
+    margin: 10px;
+    position: relative;
+}
+
+.comment_pfp{
+    width: 90px;
+    height: 90px;
+    max-width: 90px;
+    max-height: 90px;
+    min-width: 90px;
+    min-height: 90px;
+    display: block;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+.comment_main_box{
+    margin: 0 5px;
+    width: 100%;
+}
+
+.comment_top{
+    font-family: ubuntu;
+    display: flex;
+    transform: translateX(-5px);
+    align-items: center;
+}
+
+.c_displayname{
+    margin: 5px;
+    font-size: 22px;
+}
+
+.c_badge{
+    height: 16px;
+    margin: 2px;
+}
+
+.c_username{
+    color: rgb(101, 215, 235);
+    font-size: 14px;
+    margin: 7px 5px 5px 5px;
+}
+
+.c_separator{
+    width: 4px;
+    height: 4px;
+    margin: 5px;
+    border-radius: 1px;
+    background-color: rgb(220, 220, 220);
+}
+
+.c_dogtag{
+    background-color: rgb(72, 72, 75);
+    padding: 2px 3px;
+    color: rgb(101, 215, 235);
+    font-family: Ubuntu-normal;
+    font-size: 12px;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+.c_date{
+    opacity: 0.75;
+    margin: 5px;
+    margin-left: auto;
+}
+
+.comment_content{
+    margin: 10px;
+    padding: 20px;
+    font-size: 18px;
+    background-color: rgb(40, 40, 44);
 }
