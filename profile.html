@@ -65,7 +65,14 @@
                 
             </div>
 
-            <div class="post_compo_box"></div>
+            <div class="post_compo_box">
+                <div class="compo_title">Add to your feed:</div>
+                <!-- <div class="compo_desc">What would you like to publish?</div> -->
+                <textarea class="post_input" placeholder="Type something..."></textarea>
+                <button>Attach an image</button>
+                <button>Publish</button>
+                
+            </div>
 
             <!-- Follows/Followers -->
             <div class="inner_profile_content">
@@ -297,5 +304,27 @@
 
         console.log(t);
     }
+
+    // Text write resize:
+    function textareaAutoResizeIni(){
+        var tx = document.getElementsByTagName('textarea');
+        for (var i = 0; i < tx.length; i++) {
+            var padding = getComputedStyle(tx[i]).paddingBottom;
+            var padding = padding.split("px");
+
+            tx[i].setAttribute('style', 'height:' + (tx[i].scrollHeight - 2*Number(padding[0])) + 'px;overflow-y:hidden;');
+            tx[i].addEventListener("input", OnInput, false);
+        }
+    }
+
+    function OnInput() {
+        var padding = getComputedStyle(this).paddingBottom;
+        var padding = padding.split("px");
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight - 2*Number(padding[0])) + 'px';
+    }
+
+    // Call this function when exectuing ajax!
+    textareaAutoResizeIni();
 
 </script>

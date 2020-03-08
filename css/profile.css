@@ -665,3 +665,55 @@ hr{
     50%{transform: scale(1.6)}
     100%{transform: scale(0.8)}
 }
+
+
+/* Post composer */
+
+.post_compo_box{
+    margin: 15px;
+    max-width: 600px;
+}
+
+.compo_title{
+    font-size: 20px;
+    font-family: ubuntu;
+    margin: 5px;
+}
+
+.compo_desc{
+    margin: 10px;
+}
+
+.post_input{
+    width: calc(100% - 46px);
+    margin: 5px;
+    color: inherit;
+    font: inherit;
+    resize: none;
+    font-size: 22px;
+    padding: 20px;
+    border: none;
+    border-left: 2px solid rgb(101, 215, 235);
+    background-color: rgb(46, 46, 51);
+    -webkit-transition: 0.18s border-left-width cubic-bezier(0.175, 0.885, 0.32, 1.5);
+}
+
+.post_input:focus{
+    border-left-width: 6px;
+}
+
+.post_compo_box button{
+    border: none;
+    font: inherit;
+    color: rgb(101, 215, 235);
+    font-family: ubuntu;
+    cursor: pointer;
+    padding: 12px 24px;
+    margin: 5px;
+    background-color: rgb(46, 46, 51);
+}
+
+.post_compo_box button:hover{
+    background-color: rgb(101, 215, 235);
+    color: rgb(35, 35, 37);
+}

@@ -102,7 +102,7 @@ a{
 }
 
 .displayName{
-    font-size: 28px;
+    font-size: 30px;
     margin: 5px;
     display: flex;
     align-items: flex-end;
@@ -229,7 +229,7 @@ a{
 }
 
 .comments_title{
-    font-size: 36px;
+    font-size: 30px;
     margin: 30px;
 }
 
