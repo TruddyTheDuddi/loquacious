@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <title>Edit your profile - Loquacious</title>
+    <link rel="icon" href="">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/global.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/settings.css'>
+    
+</head>
+<body>
+
+    <div class="main_container">
+        <div class="setting_box">
+            <div class="setting_section_header">
+                <div class="setting_title">
+                    Profile picture
+                </div>
+                <div class="setting_desc">
+                    Upload a profile picture! It will be visible across the entire site and used as your avatar!<br><br>
+                    Make sure the file is at least 200x200px, 1:1 (square), and a png or jpg.<br>
+                    It shouldn't exceed 3Mb!
+                </div>
+            </div>
+
+            <div class="setting_el">
+
+                <div class="pfp_uploader" id="image_upload_preview">
+                    <div class="flexbox">
+                        <img id="img_output" src="img/user/pfp/4.jpg" class="current_pfp">
+                        <label class="img_selector">
+                            <div class="file_selector_alias"><span>Select file</span></div>
+                            <input id="img_file_selector" type="file">
+                        </label>
+                        <button>Remove</button>
+                    </div>
+                    <div class="upload_bar_bg">
+                        <div class="percentage"></div>
+                    </div>
+                    
+                    <div class="setting_desc">File: profile.png (300kb)</div>
+                </div>
+
+            </div>
+
+            <div class="setting_section_header">
+                <div class="setting_title">
+                    Header
+                </div>
+                <div class="setting_desc">
+                    Spice up your page by uploading a header image!<br><br>
+                    Make sure the file is at least 1500px wide, 3:1 ratio, and a png or jpg.<br>
+                    It shouldn't exceed 6Mb!
+                </div>
+            </div>
+
+            <div class="setting_el">
+
+                <div class="pfp_uploader" id="image_upload_preview">
+                    <div id="img_output_bg" style="background-image: url(img/user/bg/h5.jpg);" class="current_header">
+                        <button>Remove header</button>
+                    </div>
+                    <label class="img_selector">
+                        <div class="file_selector_alias wide"><span>Select file</span></div>
+                        <input id="img_file_selector" type="file">
+                    </label>
+                    </div>
+                    <div class="upload_bar_bg">
+                        <div class="percentage"></div>
+                    </div>
+                    
+                    <div class="setting_desc">File: h5.jpg (300kb)</div>
+                </div>
+
+                <div class="setting_section_header">
+                    <div class="setting_title setting_title_smaller">
+                        Header style
+                    </div>
+                    <div class="setting_desc">
+                        Select the way you want your header image to be displayed!
+                    </div>
+                </div>
+                <div class="setting_el disabled_el">
+                    <div class="flexbox">
+                        <label class="header_style_chooser">
+                            <div class="header_style_box">
+                                <div class="header_stylized" style="background-image: url(img/user/bg/h5.jpg);"></div>
+                            </div>
+                            <div class="header_title">
+                                <label class="radio_button">
+                                    <input type="radio" name="header_type" checked="checked">
+                                    <div class="radio_button_alt"></div>
+                                </label>
+                                Normal
+                            </div>
+                        </label>
+
+                        <label class="header_style_chooser">
+                            <div class="header_style_box">
+                                <div class="header_stylized header_stylized_tall" style="background-image: url(img/user/bg/h5.jpg);">
+                                    <div class="gradient"></div>
+                                </div>
+                            </div>
+                            <div class="header_title">
+                                <label class="radio_button">
+                                    <input type="radio" name="header_type">
+                                    <div class="radio_button_alt"></div>
+                                </label>
+                                Tall
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

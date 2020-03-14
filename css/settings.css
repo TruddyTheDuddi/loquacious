@@ -1,0 +1,232 @@
+body{
+    font-family: Overpass;
+    background-color: rgb(23, 25, 25);
+    color: rgb(220, 220, 220);
+    /* background-color: rgb(220, 220, 220); */
+    /* background-color: rgb(151, 151, 156); */
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(101, 215, 235);
+    display: inline-grid;
+}
+
+button{
+    border: none;
+    font: inherit;
+    color: rgb(101, 215, 235);
+    font-family: ubuntu;
+    cursor: pointer;
+    padding: 12px 24px;
+    background-color: rgb(46, 46, 51);
+}
+
+button:hover{
+    background-color: rgb(101, 215, 235);
+    color: rgb(35, 35, 37);
+}
+
+.main_container{
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.flexbox{
+    display: flex;
+}
+
+.setting_box{
+    display: grid;
+    max-width: 600px;
+    margin: 10px;
+    background-color: rgb(46, 46, 51);
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+
+.setting_el{
+    margin: 10px;
+}
+
+.disabled_el{
+    display: none;
+    pointer-events: none;
+}
+
+.setting_section_header{
+    margin: 10px;
+}
+
+.setting_title{
+    margin: 10px;
+    font-size: 32px;
+    font-family: ubuntu;
+}
+
+.setting_title_smaller{
+    font-size: 26px;
+}
+
+.setting_desc{
+    margin: 10px;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.current_pfp{
+    height: 180px;
+    width: 180px;
+    margin: 10px;
+    display: block;
+}
+
+.img_selector{
+    display: grid;
+}
+
+.img_selector input{
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+}
+
+.img_selector .file_selector_alias{
+    border: 1.7px dashed rgba(255,255,255,0.4);
+    margin: 10px;
+    height: 180px;
+    width: 180px;
+    box-sizing: border-box;
+    text-align: center;
+    display: grid;
+    -webkit-transition: 0.2s border-color, background-color;
+    cursor: pointer;
+}
+
+.file_selector_alias span{
+    margin: auto;
+    font-size: 18px;
+}
+
+.img_selector .file_selector_alias:hover{
+    border: 1.7px dashed rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.05);
+}
+
+.upload_info{
+    
+}
+
+.upload_bar_bg{
+    margin: 5px 10px;
+    background-color: rgba(0,0,0,0.3);
+    height: 20px;
+}
+
+.upload_bar_bg .percentage{
+    background: rgb(101, 215, 235);
+    height: 100%;
+    width: 25%;
+}
+
+.pfp_uploader .flexbox button{
+    margin: auto;
+}
+
+.pfp_uploader .current_header button{
+    margin: 10px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+}
+
+.current_header{
+    margin: 5px -20px 15px;
+    display: block;
+    height: 200px;
+    background-color: rgb(35, 35, 37);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_selector .wide{
+    width: auto;
+    height: 100px;
+}
+
+.header_style_chooser{
+    width: 100%;
+    margin: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.header_style_box{
+    width: 100%;
+    background-color: rgb(23, 25, 25);
+    height: 200px;
+    position: relative;
+    box-sizing: border-box;
+    border-left: 2px solid rgb(46, 46, 51);
+}
+
+.header_style_chooser:hover .header_style_box{
+    border-left-color: rgb(101, 215, 235);
+}
+
+.header_stylized{
+    background-color: rgb(35, 35, 37);
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.header_stylized_tall{
+    background-color: rgb(35, 35, 37);
+    height: 120px;
+    display: grid;
+    border-bottom: none;
+}
+
+.header_stylized_tall .gradient{
+    position: absolute;
+    background-image: linear-gradient(180deg,transparent 0,rgba(23,25,25,0.3) 50%,rgba(23,25,25,1));
+    height: 70%;
+    width: 100%;
+    bottom: 0;
+}
+
+.header_style_chooser .header_title{
+    font-family: ubuntu;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 18px;
+}
+
+.radio_button{
+    margin: auto 10px;
+}
+
+.radio_button .radio_button_alt{
+    background: rgb(23, 25, 25);
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    -webkit-transition: 0.1s background-color;
+}
+
+.radio_button input{
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+}
+
+.radio_button input:checked ~ .radio_button_alt{
+    background-color: rgb(101, 215, 235);
+}
+
