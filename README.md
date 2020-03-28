@@ -2,6 +2,7 @@
 Website project in progress =^._.^=
 
 **Feel free to check out the live BETA site here: https://loquacious.xyz/**
+**OR check out the Github (static) version, as it gets updated a lot more: https://truddytheduddi.github.io/loquacious/**
 
 (Tho I still need to figure out how to link it to the hosting site so it updates automatically...)
 
