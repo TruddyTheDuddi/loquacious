@@ -75,7 +75,7 @@ button:hover{
     align-items: center;
 }
 
-.setting_title_smaller img{
+.setting_title img{
     height: 24px;
     margin: auto 10px;
 }
@@ -344,6 +344,11 @@ textarea{
 .dogtag_demo .dspname{
     font-size: 36px;
     margin: 4px;
+}
+
+.dogtag_demo .badge{
+    height: 26px;
+    margin: auto 6px;
 }
 
 .dogtag_demo .username{
