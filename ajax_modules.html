@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/global.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/ajax.js"></script>
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            display: grid;
+            font-family: ubuntu;
+        }
+        .main{
+            width: 500px;
+            margin: 10px auto;
+        }
+        .module{
+            background-color: rgba(0,0,0,0.05);
+            padding: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="main">
+        
+        <h1>Ajax demo</h1>
+        <p>Computing external stuff and fetching data result according to different situations.</p>
+
+        <h3>1. Simple button action with result</h3>
+        <p>You should mostly be using a custom function for this one, as the wanted result might be varying</p>
+        <div class="module" id="buttonParent">
+            <div id="output"></div>
+            <button id="button" onclick="ajaxOnlyButtom(this, 'ajax_res.html')">Button</button>
+        </div>
+
+        <h3>2. One input submit with output</h3>
+        
+        <div class="module" id="oneInputParent">
+            <input id="input">
+            <div id="output"></div>
+            <button onclick="oneInputOutputAjax(this, 'ajax_res.html', '')">Button</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
