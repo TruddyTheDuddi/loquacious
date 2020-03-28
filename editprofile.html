@@ -14,7 +14,7 @@
 <body>
 
     <div class="main_container">
-        <div class="setting_box" style="display: none;">
+        <div class="setting_box" style="display: ;">
             <div class="setting_section_header">
                 <div class="setting_title">
                     Profile picture
@@ -118,23 +118,25 @@
             </div>
 
 
-            <!-- Username -->
+            <!-- Profile Information -->
             <div class="setting_box">
-                <div class="setting_section_header">
+                <div class="setting_el">
                     <div class="setting_title">
                         Profile Information
                     </div>
-                </div>
-                <div class="setting_el">
                     <div class="setting_title setting_title_smaller">
                         Username
                     </div>
-                    <div class="input_username">
-                        <div class="at_symbol">@</div>
-                        <input type="text" class="" autocomplete="false" value="muddi"/>
+                    <div class="input_with_save">
+                        <div class="input_username">
+                            <div class="at_symbol">@</div>
+                            <input type="text" class="" autocomplete="false" value="muddi"/>
+                        </div>
+                        <button>Save</button>
                     </div>
+                    <div class="info_message">Hello there, this is a result message</div>
                     <div class="setting_desc">
-                        This is your identity, you use this to log in. People will be able to mention you with this.<br>It can only be changed if your are a premium user.
+                        This is your identity, you use this to log in. People will be able to mention you using this.<br>It can only be changed if your are a premium user.
                     </div>
                 </div>
 
@@ -142,7 +144,11 @@
                     <div class="setting_title setting_title_smaller">
                         Display name (optional)
                     </div>
-                    <input type="text" class="" autocomplete="false" placeholder="muddi" value="Muddi the Duddi" />
+                    <div class="input_with_save">
+                        <input type="text" class="" autocomplete="false" placeholder="muddi" value="Muddi the Duddi" />
+                        <button>Save</button>
+                    </div>
+                    <div class="info_message">Hello there, this is a result message</div>
                     <div class="setting_desc">
                         You can change it as many times as you want, to anything you want! =^.w.^=<br>It can contain special characters, including space, ponctuation.
                     </div>
@@ -153,12 +159,84 @@
                         About you
                     </div>
                     <textarea placeholder="This user doesn't have a bio">Hello there fellas! Welcome to my site, how do you like it? :)</textarea>
+                    <div class="info_message">Hello there, this is a result message</div>
                     <div class="setting_desc">
                         Share a short description about yourself, so that others get a better picture of you!<br>
                         What are your hobbies? How did you land here? What do you like to talk about?
                         
                     </div>
                 </div>
+
+                <div class="setting_el">
+                    <div class="setting_title setting_title_smaller">
+                        Tagline
+                    </div>
+                    <div class="input_with_save">
+                        <input type="text" class="" autocomplete="false" placeholder="" value="Meow, meow!" maxlength="20"/>
+                        <button>Save</button>
+                    </div>
+                    <div class="info_message">Hello there, this is a result message</div>
+                    <div class="setting_desc">
+                        Still have no idea what this is for. Though you can add a short text below next to your name that will appear on your profile page. How cool? :P
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <!-- Perks -->
+            <div class="setting_box">
+                <div class="setting_el">
+                    <div class="setting_title">
+                        Addition perks
+                    </div>
+                    <div class="setting_title setting_title_smaller">
+                        Dogtag
+                    </div>
+                    <div class="input_with_save">
+                        
+                        <div class="dogtag_holder">
+                            <input type="text" id='b' autocomplete="false" maxlength="6" style="text-transform:uppercase"/>
+                        </div>
+                        
+                        <button>Request</button>
+                    </div>
+
+                    <div class='dogtag_demo'>
+                        <img class="pfp" src="img/user/pfp/4.jpg">
+                        <div class="dspname">Muddi</div> 
+                        <div class="username">@muddi</div>
+                        <div class="dot_separator"  style="display: none;" id="dot_separator"></div>
+                        <div class="dogtag" style="display: none;" id="dogtag_filler"></div>
+                    </div>
+
+                    <script>
+                        var dogtagDemo = document.getElementById("dogtag_filler"),
+                            dogtagDot = document.getElementById("dot_separator"),
+                            dogtagInput = document.getElementById('b');
+
+                            dogtagInput.oninput = function() {
+                                if(dogtagInput.value!=""){
+                                    dogtagDemo.innerText = dogtagInput.value;
+                                    if(dogtagDemo.style.display = "none")
+                                        dogtagDemo.style.display = "block";
+                                        dogtagDot.style.display = "block";
+                                } else {
+                                    dogtagDemo.style.display = "none";
+                                    dogtagDot.style.display = "none";
+                                }
+                            }
+                    </script>
+
+                    <div class="info_message">Hello there, this is a result message</div>
+                    <div class="setting_desc">
+                        Yep, you can request a short dogtag!<br><br>
+                        After submission, your custom dogtag will be reviewed and we'll decide if you deserve it, based on your activity history and dedication to the website!<br><br>
+                        Your dogtag will be displayed on your profile page and when you leave a comment.
+                    </div>
+                </div>
+
+
                 
             </div>
 

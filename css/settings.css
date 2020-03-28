@@ -64,7 +64,7 @@ button:hover{
 
 .setting_title{
     margin: 10px;
-    font-size: 32px;
+    font-size: 38px;
     font-family: ubuntu;
 }
 
@@ -278,3 +278,114 @@ textarea{
     padding-left: 30px
 }
 
+
+.info_message{
+    background-color: rgb(101, 215, 235);
+    color: rgb(35, 35, 37);
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    display: none;
+}
+
+.info_message_active{
+    display: block;
+}
+
+.info_message::after{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent rgb(101, 215, 235) transparent;
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 8px;
+}
+
+.input_with_save{
+    display: flex;
+}
+
+.input_with_save button{
+    margin: 10px;
+}
+
+.dogtag_request{
+
+}
+
+.dogtag_request{
+    border: none;
+}
+
+.dogtag_holder .div{
+    font-size: 24px;
+    padding: 10px;
+    width: auto;
+    display: inline-block;
+    visibility: hidden;
+    position: fixed;
+    overflow:auto;
+    background-color: rgba(255,255,255,0.05);
+}
+
+
+.dogtag_demo{
+    font-family: ubuntu;
+    background-color: rgba(23, 25, 25, 0.5);
+    margin: 10px -20px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.dogtag_demo .dspname{
+    font-size: 36px;
+    margin: 4px;
+}
+
+.dogtag_demo .username{
+    font-size: 15px;
+    color: rgb(101, 215, 235);
+    margin: 4px;
+    margin-top: 16px;
+}
+
+.dogtag_demo .dot_separator{
+    margin: auto 20px;
+    border-radius: 1px;
+    width: 4px;
+    height: 4px;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.dogtag_demo .dogtag{
+    background-color: rgb(70, 70, 75);
+    color: rgb(101, 215, 235);
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 3px 4px 4px 6px;
+    margin: 5px;
+    position: relative;
+}
+
+.dogtag::after{
+    width: 0;
+    content: "";
+    height: 0;
+    border-style: solid;
+    border-width: 30px 6px 0 0;
+    border-color: rgb(70, 70, 75) transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    right: -6px;
+}
+
+.dogtag_demo .pfp {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    border-radius: 100%;
+}
