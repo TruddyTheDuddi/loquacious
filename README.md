@@ -13,8 +13,9 @@ First of all, I'm going to focus on the designs and layouts. That means, all of 
 Watch out! The documents are currently **not mobile optimized**. And since the design is pretty complex, it might turn out looking really messed up.
 
 Here's a list of the pages, and the amount of progress or each of them:
+* Ajax modules (30%)
 * Profile pages (70%)
-* Profile settings (20%)
+* Profile settings (70%)
 * Single post vizualiser (80%)
 
 That's all for now! Have a cookie: :cookie:
