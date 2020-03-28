@@ -22,6 +22,7 @@ button{
     font-family: ubuntu;
     cursor: pointer;
     padding: 12px 24px;
+    margin: 10px;
     background-color: rgb(46, 46, 51);
 }
 
@@ -70,6 +71,13 @@ button:hover{
 
 .setting_title_smaller{
     font-size: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.setting_title_smaller img{
+    height: 24px;
+    margin: auto 10px;
 }
 
 .setting_desc{
@@ -77,6 +85,12 @@ button:hover{
     opacity: 0.8;
     font-size: 14px;
 }
+
+.setting_desc_big{
+    margin: 10px;
+    font-size: 18px;
+}
+
 
 .current_pfp{
     height: 180px;
@@ -138,7 +152,6 @@ button:hover{
 }
 
 .pfp_uploader .current_header button{
-    margin: 10px;
     box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
 }
 
@@ -254,7 +267,6 @@ textarea:focus{
 
 textarea{
     font-size: 19px;
-    max-width: 380px;
     resize: none;
     padding: 15px;
 }
@@ -308,18 +320,6 @@ textarea{
     display: flex;
 }
 
-.input_with_save button{
-    margin: 10px;
-}
-
-.dogtag_request{
-
-}
-
-.dogtag_request{
-    border: none;
-}
-
 .dogtag_holder .div{
     font-size: 24px;
     padding: 10px;
@@ -361,7 +361,8 @@ textarea{
     background-color: rgba(255,255,255,0.6);
 }
 
-.dogtag_demo .dogtag{
+.dogtag{
+    font-family: ubuntu;
     background-color: rgb(70, 70, 75);
     color: rgb(101, 215, 235);
     text-transform: uppercase;
@@ -388,4 +389,20 @@ textarea{
     width: 60px;
     margin: 10px;
     border-radius: 100%;
+}
+
+.requested_dogtag{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    margin: 10px;
+}
+
+.requested_dogtag .dogtag{
+    margin: auto 15px;
+}
+
+.requested_dogtag button{
+    font-size: 16px;
+    margin-left: auto;
 }
